@@ -42,6 +42,24 @@ test_that("basic ipu works", {
   )
 })
 
+test_that("single marginal targets work", {
+  result <- setup_arizona()
+  hh_seed <- result$hh_seed
+  hh_targets <- result$hh_targets
+  per_seed <- result$per_seed
+  per_targets <- result$per_targets
+  
+  # Modify if only a regional person count is known
+  per_seed <- per_seed %>%
+    mutate(pertype = "any")
+  per_targets$pertype <- tibble(
+    any = 260
+  )
+  
+  result <- ipu(hh_seed, hh_targets, per_seed, per_targets, max_iterations = 1)
+  expect_equal(result$secondary_comp$category[[1]], "pertype_any")
+})
+
 test_that("weight constraint works", {
   result <- setup_arizona()
   hh_seed <- result$hh_seed

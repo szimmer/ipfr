@@ -7,8 +7,9 @@ status](https://www.r-pkg.org/badges/version/ipfr)](https://cran.r-project.org/p
 
 # ipfr
 
-A package for iterative proportional fitting on multiple
-marginal distributions in R.
+A package for iterative proportional fitting on multiple marginal distributions
+in R. The goal of this package is to make survey raking, matrix balancing, and
+population synthesis easier.
 
 ## Installation
 Install the latest official version from CRAN:
@@ -26,7 +27,7 @@ install_github("dkyleward/ipfr", build_vignettes = TRUE)
 
 ## Basic Usage
 
-(More in the vignettes) 
+(See vignettes at the bottom for advanced topics.)
 
 A basic matrix balance task:
 
