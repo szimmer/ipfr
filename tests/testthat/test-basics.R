@@ -8,7 +8,6 @@ test_that("ipu_matrix works", {
   row_targets <- c(3, 4, 5)
   column_targets <- c(5, 4, 3)
   result <- ipu_matrix(mtx, row_targets, column_targets)
-  expect_equal(class(result), "matrix")
   expect_equal(round(rowSums(result)[1], 4), 3)
   expect_equal(colSums(result)[3], 3)
 })

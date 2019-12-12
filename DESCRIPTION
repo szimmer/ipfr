@@ -1,6 +1,6 @@
 Package: ipfr
 Title: List Balancing for Reweighting and Population Synthesis
-Version: 1.0.0.9000
+Version: 1.0.1
 Authors@R: c(
   person(
     "Kyle", "Ward", email = "kyleward084@gmail.com",
@@ -37,4 +37,4 @@ Suggests:
     testthat (>= 2.1.0),
     covr
 VignetteBuilder: knitr
-RoxygenNote: 6.1.1
+RoxygenNote: 7.0.2
