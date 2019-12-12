@@ -145,7 +145,7 @@ ipu <- function(primary_seed, primary_targets,
   primary_seed_mod <- process_seed_table(
     primary_seed, primary_id, marginal_columns
   )
-  
+
   if (!is.null(secondary_seed)) {
     # Modify the person seed table the same way, but sum by primary ID
     marginal_columns <- names(secondary_targets_mod)
@@ -163,11 +163,11 @@ ipu <- function(primary_seed, primary_targets,
   } else {
     seed <- primary_seed_mod
   }
-  
+
   # Add the geo information back.
   seed <- seed %>%
     dplyr::left_join(geo_equiv, by = primary_id)
-  
+    
   # store a vector of attribute column names to loop over later.
   # don't include primary_id or 'weight' in the vector.
   geo_pos <- grep("geo_", colnames(seed))
