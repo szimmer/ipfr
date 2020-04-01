@@ -1,6 +1,6 @@
 ## Minor update
-I had to revise a unit test due to the change to class() with respect to
-matrices.
+I had to revise a function given the change to tibble behavior in the 3.0.0
+release.
 
 ## Test environments
 * Windows 10, R 3.6.1 (local)
