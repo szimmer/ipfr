@@ -1,6 +1,6 @@
 Package: ipfr
 Title: List Balancing for Reweighting and Population Synthesis
-Version: 1.0.1
+Version: 1.0.2
 Authors@R: c(
   person(
     "Kyle", "Ward", email = "kyleward084@gmail.com",
