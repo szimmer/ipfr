@@ -350,7 +350,7 @@ ipu <- function(primary_seed, primary_targets,
   result$weight_tbl <- primary_seed
   result$weight_tbl$geo_all <- NULL
   result$weight_dist <- ggplot2::ggplot(
-    data = primary_seed, ggplot2::aes(primary_seed$weight_factor)
+    data = primary_seed, ggplot2::aes(weight_factor)
   ) +
     ggplot2::geom_histogram(bins = 10, fill = "darkblue", color = "gray") +
     ggplot2::labs(
