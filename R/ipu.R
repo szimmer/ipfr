@@ -62,8 +62,8 @@
 #' The min_scale caps the minimum weight at a multiple of that average. Defaults
 #' to \code{0.0001} (basically turned off).
 #' @return a \code{named list} with the \code{primary_seed} with weight, a 
-#'   histogram of the weight distribution, and two comparison tables to aid in
-#'   reporting.
+#'   histogram of the weight distribution, two comparison tables to aid in
+#'   reporting, and the convergence status.
 #' @export
 #' @examples
 #' hh_seed <- dplyr::tibble(
