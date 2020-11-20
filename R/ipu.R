@@ -380,6 +380,8 @@ ipu <- function(primary_seed, primary_targets,
     result$secondary_comp <- secondary_comp
   }
   
+  result$converged <- converged
+  
   return(result)
 }
 
